@@ -69,7 +69,7 @@ const getStyle = classNames => {
 
   ast.stylesheet.rules = rules.concat(atRules);
 
-  return css.stringify(ast);
+  return css.stringify(ast, {indent: '…'});
 };
 
 const getClassNamesFromSelectorsByHashes = (classNames, hashes) => {
